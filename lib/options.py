@@ -5,7 +5,7 @@ import time
 from lib.common import start
 from lib.cli_output import start_out
 from plugins.ActiveReconnaissance.active import ActiveCheck
-from report import gener
+from reports import gener
 
 
 def read_file(file):

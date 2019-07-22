@@ -16,15 +16,18 @@ if sys.version_info.minor < 6:
     sys.stdout.write("Sorry, Vxscan requires Python >= 3.6\n")
     sys.exit(1)
 
+
 if __name__ == "__main__":
+    print(__name__)
     
     logging.basicConfig(filename='error.log', level=logging.ERROR)
     
     try:
+
         banner()
         options()
     except KeyboardInterrupt:
         print('\nCtrl+C Stop running\n')
         sys.exit(0)
-    except Exception as e:
-        logging.exception(e)
+    # except Exception as e:
+    #     logging.exception(e)

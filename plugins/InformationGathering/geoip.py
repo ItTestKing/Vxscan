@@ -10,7 +10,7 @@ from lib.bcolors import bcolors
 def geoip(ipaddr):
     # 获取IP地理位置
     geoip2.database
-    reader = geoip2.database.Reader('data/GeoLite2-City.mmdb')
+    reader = geoip2.database.Reader('F:/GitHub/Vxscan/data/GeoLite2-City.mmdb')
     try:
         response = reader.city(ipaddr)
         country = response.country.names["zh-CN"]
