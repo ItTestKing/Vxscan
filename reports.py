@@ -6,6 +6,7 @@ import time
 import sys
 from lib.sqldb import Sqldb
 
+
 dbname = 'result'
 
 
@@ -40,7 +41,7 @@ def gen_webinfo():
             "tableData": tableData,
             "columns": column
         }
-        
+
         return data
     except Exception as e:
         print(e)
@@ -65,7 +66,7 @@ def gen_ports():
             "tableData": tableData,
             "columns": column
         }
-        
+
         return data
     except Exception as e:
         print(e)
@@ -74,6 +75,7 @@ def gen_ports():
 def gen_urls():
     tableData = []
     sql = 'select time,domain,title,url,contype,rsp_len,rsp_code from urls'
+  #  sql = 'select time,domain,title,url,contype,rsp_len,rsp_code from webinfo'
     try:
         res = Sqldb(dbname).query(sql)
         for i in res:

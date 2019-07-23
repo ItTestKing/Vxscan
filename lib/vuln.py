@@ -23,7 +23,7 @@ class Vuln():
     
     def vuln(self, script):
         check_func = getattr(script, 'check')
-        result = check_func(self.ip, self.ports, self.apps)
+        result   = check_func(self.ip, self.ports, self.apps)
         if result:
             if type(result) == str:
                 self.out.append(result)

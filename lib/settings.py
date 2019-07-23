@@ -17,7 +17,7 @@ BLOCK_CONTYPE = [
 ]
 
 # 是否跳过目录扫描
-SCANDIR = True
+SCANDIR = False
 
 # 是否启动POC插件
 POC = True

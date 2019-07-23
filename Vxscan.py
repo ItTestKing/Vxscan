@@ -18,8 +18,6 @@ if sys.version_info.minor < 6:
 
 
 if __name__ == "__main__":
-    print(__name__)
-    
     logging.basicConfig(filename='error.log', level=logging.ERROR)
     
     try:

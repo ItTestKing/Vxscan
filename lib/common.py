@@ -19,7 +19,7 @@ from plugins.PassiveReconnaissance.reverse_domain import reverse_domain
 from plugins.InformationGathering.geoip import geoip
 from plugins.Scanning.port_scan import ScanPort
 
-
+# 判断CDN、端口扫描、POC扫描等
 def web_save(webinfo):
     Sqldb('result').get_webinfo(webinfo)
 
